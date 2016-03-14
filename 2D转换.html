@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+<style> 
+div
+{
+margin:30px;
+width:200px;
+height:100px;
+background-color:yellow;
+/* Rotate div */
+transform:rotate(9deg);
+-ms-transform:rotate(9deg); /* Internet Explorer */
+-moz-transform:rotate(9deg); /* Firefox */
+-webkit-transform:rotate(9deg); /* Safari 和 Chrome */
+-o-transform:rotate(9deg); /* Opera */
+}
+
+div#div2
+{
+transform:translate(50px,60px);
+-ms-transform:translate(50px,60px); /* IE 9 */
+-moz-transform:translate(50px,60px); /* Firefox */
+-webkit-transform:translate(50px,10px); /* Safari and Chrome */
+-o-transform:translate(50px,60px); /* Opera */
+}
+
+.style3{
+		margin-left: 200px;
+	
+		transform: scale(2,4);
+	-webkit-transform: scale(2,1);
+	-moz-transform: scale(2,2);
+	-ms-transform: scale(2,4);
+	background-color: red;
+}
+.style4{
+	
+transform:skew(30deg,20deg);
+-ms-transform:skew(30deg,20deg); /* IE 9 */
+-moz-transform:skew(30deg,20deg); /* Firefox */
+-webkit-transform:skew(30deg,20deg); /* Safari and Chrome */
+-o-transform:skew(30deg,20deg); /* Opera */
+background-color: greenyellow;
+
+}
+.style5{
+transform:matrix(0.866,0.5,-0.5,0.866,0,0);
+-ms-transform:matrix(0.866,0.5,-0.5,0.866,0,0); /* IE 9 */
+-moz-transform:matrix(0.866,0.5,-0.5,0.866,0,0); /* Firefox */
+-webkit-transform:matrix(0.866,0.5,-0.5,0.866,0,0); /* Safari and Chrome */
+-o-transform:matrix(0.866,0.5,-0.5,0.866,0,0); /* Opera */
+background-color: paleturquoise;
+}
+</style>
+</head>
+<body>
+
+<div>Hello World</div>
+<div id="div2">Hello World</div>
+<div class="style3">Hello World</div>
+<div class="style4">Hello World</div>
+<div class="style5"> matrix() 方法把所有 2D 转换方法组合在一起。
+matrix() 方法需要六个参数，包含数学函数，允许您：旋转、缩放、移动以及倾斜元素。</div>
+</body>
+</html>
